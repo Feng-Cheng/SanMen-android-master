@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E55255</color>
+    <color name="colorPrimaryDark">#d90c09</color>
+    <color name="colorAccent">#d90c09</color>
+
+    <color name="navigation_background_light">#FFF8F8F8</color>
+    <color name="navigation_subtitle_primary_text">#FFFFFFFF</color>
+    <color name="navigation_subtitle_secondary_text">#BFFFFFFF</color>
+
+    <color name="navigation_head_background">#808080</color>
+
+    <color name="text_black">#333333</color>
+    <color name="textColor">#333333</color>
+    <color name="textColor_title">#444444</color>
+    <color name="textColor_two">#666666</color>
+    <color name="textColor_three">#999999</color>
+    <color name="textColor_four">#6d6d6b</color>
+    <color name="textColor_show">#8b8b8b</color>
+
+    <color name="button_color">#E6B70F</color>
+
+    <color name="button_color2">#A25331</color>
+
+    <color name="text_cun_activity">#989896</color>
+
+    <color name="rl_backgroud_regist">#FBF7F4</color>
+
+    <color name="auditor_textViewColor">#F5F5F5</color>
+
+    <color name="mor_bg">#F9F8F4</color>
+
+    <color name="big_bg">#EBECF0</color>
+
+    <color name="toolBar">#FAF4F2</color>
+    <color name="title">#232323</color>
+    <color name="other">#B2B2B2</color>
+    <color name="colorDialogLine">#dfdfdf</color>
+
+
+</resources>

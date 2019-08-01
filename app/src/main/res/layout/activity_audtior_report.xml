@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4">
+
+    <include layout="@layout/content_titile"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="20dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginLeft="15dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_audtior_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="3dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor"/>
+            </LinearLayout>
+
+            <include layout="@layout/cut_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_adm_name"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/adm_name"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <!--<TextView-->
+                    <!--android:id="@+id/ed_adm_name"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:textSize="@dimen/text_size"-->
+                    <!--android:textColor="@color/textColor_two"/>-->
+                <TextView
+                        android:id="@+id/tv_work_admin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:drawableRight="@drawable/ic_down"
+                        android:textSize="@dimen/text_size_two"
+                        android:textColor="@color/textColor_two"
+                        android:text="请先选择礼堂区域"
+                        android:padding="10dp"/>
+            </LinearLayout>
+
+            <include layout="@layout/cut_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_adress_small"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/auditorium_address"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <EditText
+                    android:id="@+id/ed_auditor_adress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor_two"/>
+            </LinearLayout>
+
+            <include layout="@layout/cut_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_auditor_intord"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/auditorium_introd"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <EditText
+                    android:id="@+id/ed_auditor_intdro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor_two"/>
+            </LinearLayout>
+
+            <include layout="@layout/cut_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_livexiangzheng"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/live_xiangz"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <!--<TextView
+                    android:id="@+id/ed_xiangzheng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor_two"/>-->
+                <TextView
+                        android:id="@+id/tv_work_statics_village"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="全部"
+                        android:drawableRight="@drawable/ic_down"
+                        android:textSize="@dimen/text_size_two"
+                        android:textColor="@color/textColor_two"
+                        android:padding="10dp"/>
+                <TextView
+                        android:id="@+id/tv_work_statics_check_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_down"
+                        android:textSize="@dimen/text_size_two"
+                        android:textColor="@color/textColor_two"
+                        android:padding="10dp"/>
+            </LinearLayout>
+
+            <include layout="@layout/cut_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_report_photo"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/photo_report"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/iv_iv1"
+                            android:layout_width="100dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="8dp"
+                            />
+                        <ImageView
+                            android:id="@+id/iv_auding_auditor_photo_del1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_delet"
+                            android:layout_alignRight="@+id/iv_iv1"
+                            android:layout_marginTop="3dp"
+                            android:visibility="gone"/>
+                        <ImageView
+                            android:id="@+id/iv_iv2"
+                            android:layout_width="100dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="3dp"/>
+                        <ImageView
+                            android:id="@+id/iv_auding_auditor_photo_del2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_delet"
+                            android:layout_alignRight="@+id/iv_iv2"
+                            android:layout_marginTop="3dp"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/iv_iv3"
+                            android:layout_width="100dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <ImageView
+                            android:id="@+id/iv_auding_auditor_photo_del3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_delet"
+                            android:layout_alignRight="@+id/iv_iv3"
+                            android:layout_marginTop="3dp"
+                            android:visibility="gone"/>
+                        <ImageView
+                            android:id="@+id/iv_iv4"
+                            android:layout_width="100dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_add_photo"
+                            android:layout_marginRight="3dp"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/cut_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_vill_main"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Village_situation"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <EditText
+                    android:id="@+id/et_village_situation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size"
+                    android:background="@null"
+                    android:textColor="@color/textColor_two"/>
+            </LinearLayout>
+            <include layout="@layout/cut_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_lishihui"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Council"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <EditText
+                    android:id="@+id/et_lishihui"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:minLines="1"
+                    android:maxLines="5"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size"
+                    android:background="@null"
+                    android:textColor="@color/textColor_two"/>
+            </LinearLayout>
+            <include layout="@layout/cut_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_wenti"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/team_build"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <EditText
+                    android:id="@+id/ed_team_build"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size"
+                    android:background="@null"
+                    android:textColor="@color/textColor_two"/>
+            </LinearLayout>
+            <include layout="@layout/cut_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_ps"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/remarks"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <EditText
+                    android:id="@+id/et_remarks"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size"
+                    android:background="@null"
+                    android:textColor="@color/textColor_two"/>
+            </LinearLayout>
+
+            <include layout="@layout/cut_line"/>
+
+
+            <Button
+                android:id="@+id/btn_report"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/submission"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

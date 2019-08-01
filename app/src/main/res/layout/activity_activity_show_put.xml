@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4">
+
+    <include layout="@layout/content_titile"/>
+
+    <include layout="@layout/cut_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_adm_name"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="所属区域"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+            android:id="@+id/ed_adm_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor_two"/>
+    </LinearLayout>
+
+    <include layout="@layout/cut_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_activty_announce_time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_adress_small"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/preview_time"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+            android:id="@+id/tv_activity_put_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor_two"/>
+    </LinearLayout>
+
+    <include layout="@layout/cut_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_auditor_intord"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/organizer"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            />
+        <EditText
+            android:id="@+id/ed_activity_organizer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor_two"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <include layout="@layout/cut_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_auditor_intord"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activity_them"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            />
+        <EditText
+            android:id="@+id/ed_activity_theme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor_two"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <include layout="@layout/cut_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_auditor_intord"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/announce_content"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            />
+        <EditText
+            android:id="@+id/ed_activity_announce_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor_two"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <include layout="@layout/cut_line"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_report_photo"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:text="@string/photo_report"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/iv_iv1"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp" />
+
+                <ImageView
+                    android:id="@+id/iv_iv2"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:id="@+id/iv_iv3"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_iv4"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_add_photo"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/cut_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_ps"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/remarks"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            />
+        <EditText
+            android:id="@+id/et_remarks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:background="@null"
+            android:textColor="@color/textColor_two"/>
+    </LinearLayout>
+
+    <include layout="@layout/cut_line"/>
+
+
+    <Button
+        android:id="@+id/btn_report"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/save"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        />
+
+
+</LinearLayout>

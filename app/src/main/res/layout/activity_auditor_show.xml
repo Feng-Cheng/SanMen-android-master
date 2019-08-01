@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/big_bg">
+
+    <include layout="@layout/content_titile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/mor_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="20dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginLeft="15dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_audtiorname"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:text="龙溪乡文化礼堂"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor"/>
+            </LinearLayout>
+
+            <include layout="@layout/cut_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="所属乡镇:"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_xiangzheng"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_three"
+                        android:layout_weight="2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="管理员:"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size" />
+                    <TextView
+                        android:id="@+id/tv_adm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_three"
+                        android:layout_weight="2"/>
+                </LinearLayout>
+
+                <include layout="@layout/cut_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="建筑面积:"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/textColor"/>
+                    <TextView
+                        android:id="@+id/tv_build_area"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_three"
+                        android:layout_weight="2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="建成年份:"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/textColor"/>
+                    <TextView
+                        android:id="@+id/tv_build_year"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_three"
+                        android:layout_weight="2"/>
+                </LinearLayout>
+
+                <include layout="@layout/cut_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="村概况:"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"/>
+                    <TextView
+                        android:id="@+id/tv_village_situation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:textColor="@color/textColor_two"
+                        android:textSize="@dimen/text_three" />
+                </LinearLayout>
+
+                <include layout="@layout/cut_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="礼堂介绍:"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"/>
+                    <TextView
+                        android:id="@+id/tv_auditor_stat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColor_two"
+                        android:layout_marginRight="3dp"
+                        android:textSize="@dimen/text_three"/>
+                </LinearLayout>
+
+                <include layout="@layout/cut_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="队伍建设:"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"/>
+                    <TextView
+                        android:id="@+id/tv_wenti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColor_two"
+                        android:layout_marginRight="3dp"
+                        android:textSize="@dimen/text_three"/>
+                </LinearLayout>
+
+                <include layout="@layout/cut_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="备注:"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size"/>
+                    <TextView
+                        android:id="@+id/tv_ps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColor_two"
+                        android:layout_marginRight="3dp"
+                        android:textSize="@dimen/text_three"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

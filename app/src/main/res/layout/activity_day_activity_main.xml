@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/content_titile"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/rl_title">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#FAF4F2"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/tv_title_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#FAF4F2"
+            android:textColor="@android:color/black"/>
+
+
+
+    </RelativeLayout>
+    <!--<com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        />
+-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_seletor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mor_bg"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorPrimary" />
+
+<!--    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_test_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <com.test.ydool.sanmen.widget.ScrollEnableViewPager
+        android:id="@+id/vp_Show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.test.ydool.sanmen.widget.ScrollEnableViewPager>
+</LinearLayout>

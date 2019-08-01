@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/big_bg">
+
+    <include layout="@layout/content_titile"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mor_bg"
+                android:id="@+id/ll_wenDang"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_ohter_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文档标题"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/tv_base_time"
+                    android:layout_alignLeft="@id/tv_base_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击下载"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:id="@+id/tv_ohter_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三门县管理云平台web端详细功能说明书（村级管理员）.pdf"
+                    android:textColor="@color/textColor_two"
+                    android:layout_below="@id/tv_ohter_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignLeft="@id/tv_ohter_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mor_bg"
+                android:id="@+id/ll_wenDang1"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_ohter_content1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文档标题"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/tv_base_time"
+                    android:layout_alignLeft="@id/tv_base_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击下载"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三门县管理云平台web端详细功能说明书（乡镇街道和县级管理员）_.pdf"
+                    android:textColor="@color/textColor_two"
+                    android:layout_below="@id/tv_ohter_content1"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignLeft="@id/tv_ohter_content1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mor_bg"
+                android:id="@+id/ll_wenDang6"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_ohter_content6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文档标题"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/tv_base_time"
+                    android:layout_alignLeft="@id/tv_base_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击下载"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三门县管理云平台手机端详细功能说明书（村级管理员）.pdf"
+                    android:textColor="@color/textColor_two"
+                    android:layout_below="@id/tv_ohter_content6"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignLeft="@id/tv_ohter_content6"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mor_bg"
+                android:id="@+id/ll_wenDang7"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_ohter_content7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文档标题"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/tv_base_time"
+                    android:layout_alignLeft="@id/tv_base_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击下载"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三门县管理云平台手机端详细功能说明书（乡镇街道和县管理员）.doc"
+                    android:textColor="@color/textColor_two"
+                    android:layout_below="@id/tv_ohter_content7"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignLeft="@id/tv_ohter_content7"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mor_bg"
+                android:id="@+id/ll_wenDang2">
+
+                <TextView
+                    android:id="@+id/tv_ohter_content2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文档标题"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/tv_base_time"
+                    android:layout_alignLeft="@id/tv_base_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击下载"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工作小结.mp4"
+                    android:textColor="@color/textColor_two"
+                    android:layout_below="@id/tv_ohter_content2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignLeft="@id/tv_ohter_content2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mor_bg"
+                android:id="@+id/ll_wenDang3">
+
+                <TextView
+                    android:id="@+id/tv_ohter_content3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文档标题"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/tv_base_time"
+                    android:layout_alignLeft="@id/tv_base_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击下载"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动预告.mp4"
+                    android:textColor="@color/textColor_two"
+                    android:layout_below="@id/tv_ohter_content3"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignLeft="@id/tv_ohter_content3"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mor_bg"
+                android:id="@+id/ll_wenDang4">
+
+                <TextView
+                    android:id="@+id/tv_ohter_content4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文档标题"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/tv_base_time"
+                    android:layout_alignLeft="@id/tv_base_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击下载"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动展示.mp4"
+                    android:textColor="@color/textColor_two"
+                    android:layout_below="@id/tv_ohter_content4"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignLeft="@id/tv_ohter_content4"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mor_bg"
+                android:id="@+id/ll_wenDang5">
+
+                <TextView
+                    android:id="@+id/tv_ohter_content5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文档标题"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/tv_base_time"
+                    android:layout_alignLeft="@id/tv_base_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击下载"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="在线建言.mp4"
+                    android:textColor="@color/textColor_two"
+                    android:layout_below="@id/tv_ohter_content5"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignLeft="@id/tv_ohter_content5"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

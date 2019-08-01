@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/mor_bg">
+
+    <ImageView
+        android:id="@+id/iv_online_advices_type"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_online_advice_true"/>
+
+
+    <TextView
+        android:id="@+id/tv_share_audname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_online_advices_type"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size"
+        android:layout_alignTop="@+id/iv_online_advices_type"
+        android:text="aaaaa"
+        />
+
+    <TextView
+        android:id="@+id/tv_share_man"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_online_advices_type"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:text="aaa"
+        android:textSize="@dimen/text_size_two"
+        android:textColor="@color/textColor_two"
+        android:layout_below="@+id/tv_share_audname"
+        />
+
+    <TextView
+        android:id="@+id/tv_share_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_share_man"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:text="aaa"
+        android:textSize="@dimen/text_size_two"
+        android:textColor="@color/textColor_two"
+        android:layout_alignBottom="@+id/tv_share_man"
+        />
+
+    <TextView
+        android:id="@+id/tv_share_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="aaaaaaaaa"
+        android:textSize="@dimen/text_size_two"
+        android:textColor="@color/textColor_two"
+        android:layout_below="@+id/tv_share_man"
+        android:layout_alignLeft="@+id/tv_share_man"
+        />
+</RelativeLayout>

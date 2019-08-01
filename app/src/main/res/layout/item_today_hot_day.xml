@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_today_hot1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_tile1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            android:layout_margin="8dp"
+            android:lines="2"/>
+
+
+        <TextView
+            android:id="@+id/tv_hot_from1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tile1"
+            android:layout_alignLeft="@id/tv_tile1"
+            />
+
+        <TextView
+            android:id="@+id/tv_hot_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tile1"
+            android:layout_toRightOf="@id/tv_hot_from1"
+            android:layout_marginLeft="15dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="#e0e0e0"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_today_hot2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_tile2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            android:layout_margin="8dp"
+            android:lines="2"/>
+
+
+        <TextView
+            android:id="@+id/tv_hot_from2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tile2"
+            android:layout_alignLeft="@id/tv_tile2"
+            />
+
+        <TextView
+            android:id="@+id/tv_hot_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tile2"
+            android:layout_toRightOf="@id/tv_hot_from2"
+            android:layout_marginLeft="15dp"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

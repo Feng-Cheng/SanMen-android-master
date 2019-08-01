@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#F9F8F4">
+
+
+    <ImageView
+        android:id="@+id/iv_base_kind"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/ic_notice"/>
+
+    <TextView
+        android:id="@+id/tv_base_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_base_kind"
+        android:layout_alignTop="@+id/iv_base_kind"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textColor"
+        />
+
+    <TextView
+        android:id="@+id/tv_base_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_base_time"
+        android:layout_below="@+id/tv_base_time"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textColor"
+        />
+
+    <TextView
+        android:id="@+id/tv_conten_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_base_name"
+        android:layout_alignTop="@id/tv_base_name"
+        android:textSize="@dimen/text_size"
+        android:text=""/>
+
+
+    <TextView
+        android:id="@+id/tv_base_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:layout_below="@+id/tv_conten_title"
+        android:layout_alignLeft="@+id/tv_base_name"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="5dp"/>
+
+<!--    <com.test.ydool.sanmen.view.MyTextview
+        xmlns:more="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tv_base_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/tv_conten_title"
+        android:layout_alignLeft="@+id/tv_base_name"
+        more:maxLine="2"
+        more:textColor="@color/textColor"
+        more:textSize="@dimen/text_size"
+        />-->
+
+    <TextView
+        android:id="@+id/tv_ohter_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ohter_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@id/tv_base_main"
+        android:layout_alignLeft="@id/tv_base_main"/>
+
+    <TextView
+        android:id="@+id/tv_ohter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无"
+        android:textColor="@color/textColor_two"
+        android:layout_below="@id/tv_ohter_content"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@id/tv_base_main"/>
+  <!--  <TextView
+        android:id="@+id/tv_checkmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_ohter_name"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/checkmore"
+        android:textColor="@color/datepick_surance_blue"
+        />-->
+
+
+</RelativeLayout>

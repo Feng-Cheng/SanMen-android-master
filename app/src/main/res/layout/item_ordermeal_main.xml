@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mor_bg">
+
+
+
+    <TextView
+        android:id="@+id/tv_base_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="大标题"
+        android:textSize="@dimen/text_size"
+        android:maxLines="2"
+        android:textColor="@color/textColor"
+        />
+
+    <TextView
+        android:id="@+id/tv_base_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_base_time"
+        android:layout_alignLeft="@+id/tv_base_time"
+        android:text="内容主题"
+        android:textSize="@dimen/text_size_four"
+        android:textColor="@color/textColor_two"
+        />
+
+    <TextView
+        android:id="@+id/tv_conten_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_base_name"
+        android:layout_alignBottom="@id/tv_base_name"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text_size_four"
+        android:text="时间"/>
+
+
+    <TextView
+        android:id="@+id/tv_base_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:layout_below="@id/tv_base_name"
+        android:layout_alignLeft="@id/tv_base_name"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textColor"
+        android:text="活动内容"/>
+
+    <TextView
+        android:id="@+id/tv_ohter_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_base_main"
+        android:layout_alignStart="@+id/tv_base_main"
+        android:layout_below="@+id/tv_base_main"
+        android:layout_marginTop="5dp"
+        android:text="活动数量:0"
+        android:textSize="@dimen/text_size_four"
+        android:textColor="@color/textColor_two" />
+
+    <TextView
+        android:id="@+id/tv_ohter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已点数量:0"
+        android:textColor="@color/textColor_two"
+        android:textSize="@dimen/text_size_four"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_ohter_content"
+        android:layout_alignTop="@+id/tv_ohter_content"/>
+
+    <TextView
+        android:id="@+id/tv_is_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已点:大周村"
+        android:layout_below="@+id/tv_ohter_content"
+        android:textSize="@dimen/text_size_four"
+        android:layout_alignLeft="@+id/tv_ohter_content"
+        android:textColor="@color/textColor_two"
+        android:layout_marginBottom="5dp"
+        />
+
+
+</RelativeLayout>

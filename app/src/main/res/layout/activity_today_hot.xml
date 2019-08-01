@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/content_titile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <TextView
+                android:id="@+id/tv_tile1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/textColor"
+                android:layout_margin="8dp"
+                android:lines="2"/>
+
+
+            <TextView
+                android:id="@+id/tv_hot_from1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tile1"
+                android:layout_alignLeft="@id/tv_tile1"
+                />
+
+            <TextView
+                android:id="@+id/tv_hot_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tile1"
+                android:layout_toRightOf="@id/tv_hot_from1"
+                android:layout_marginLeft="15dp"
+                />
+
+        </RelativeLayout>
+        
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#e0e0e0"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_tile2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/textColor"
+                android:layout_margin="8dp"
+                android:lines="2"/>
+
+
+            <TextView
+                android:id="@+id/tv_hot_from2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tile2"
+                android:layout_alignLeft="@id/tv_tile2"
+                />
+
+            <TextView
+                android:id="@+id/tv_hot_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tile2"
+                android:layout_toRightOf="@id/tv_hot_from2"
+                android:layout_marginLeft="15dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_tile3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/textColor"
+                android:layout_margin="8dp"
+                android:lines="2"/>
+
+
+            <TextView
+                android:id="@+id/tv_hot_from3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tile3"
+                android:layout_alignLeft="@id/tv_tile3"
+                />
+
+            <TextView
+                android:id="@+id/tv_hot_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tile3"
+                android:layout_toRightOf="@id/tv_hot_from3"
+                android:layout_marginLeft="15dp"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#e0e0e0"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_tile4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/textColor"
+                android:layout_margin="8dp"
+                android:lines="2"/>
+
+
+            <TextView
+                android:id="@+id/tv_hot_from4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tile4"
+                android:layout_alignLeft="@id/tv_tile4"
+                />
+
+            <TextView
+                android:id="@+id/tv_hot_time4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tile4"
+                android:layout_toRightOf="@id/tv_hot_from4"
+                android:layout_marginLeft="15dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_hotall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

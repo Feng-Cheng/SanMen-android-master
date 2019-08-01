@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4">
+
+    <include layout="@layout/content_titile"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:background="@color/bg_white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_online_xiangzheng"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="所属区域"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <TextView
+                    android:id="@+id/ed_adm_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor_two"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:background="@color/bg_white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_online_man"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="建言对象"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <TextView
+                        android:id="@+id/tv_work_statics_village"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="三门县"
+                        android:drawableRight="@drawable/ic_down"
+                        android:textSize="@dimen/text_size_two"
+                        android:textColor="@color/textColor_two"
+                        android:padding="10dp"/>
+                <TextView
+                        android:id="@+id/tv_work_statics_check_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_down"
+                        android:textSize="@dimen/text_size_two"
+                        android:textColor="@color/textColor_two"
+                        android:padding="10dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:background="@color/bg_white"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_online_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="建言内容"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <EditText
+                    android:id="@+id/ed_auditor_intdro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size"
+                    android:background="@null"
+                    android:textColor="@color/textColor_two"/>
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btn_report"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/submission"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                />
+
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文艺十八大"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_title"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/tv_authort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="许辉"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor_two"
+            />
+        <TextView
+            android:id="@+id/tv_read_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="54阅读量"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor_two"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-12-12"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor_two"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/ll_main"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textColor"
+        android:text="内容"/>
+
+    <TextView
+        android:id="@+id/tv_read_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_main"
+        android:text="@string/read_all"
+        android:textColor="#B9CDD8"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"
+        android:layout_below="@id/tv_read_all"/>
+</RelativeLayout>

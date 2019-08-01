@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/big_bg">
+
+
+    <include layout="@layout/content_titile"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mor_bg">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_three"
+            android:textColor="@color/textColor"
+            android:text="村礼堂账号"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_three"
+            android:textColor="@color/textColor"
+            android:text="	所属村"/>
+        <TextView
+            android:id="@+id/tv_click"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_three"
+            android:textColor="@color/textColor"
+            android:text="	状态"/>
+    </LinearLayout>
+
+    <include layout="@layout/cut_line"/>
+    <include layout="@layout/cut_line"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlOrderMealActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

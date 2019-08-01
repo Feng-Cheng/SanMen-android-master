@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/big_bg">
+
+    <include layout="@layout/content_titile"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/mor_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/village"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_work_statics_village"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="全部"
+            android:drawableRight="@drawable/ic_down"
+            android:background="@drawable/text_selector"
+            android:textSize="@dimen/text_size_two"
+            android:textColor="@color/textColor_two"
+            android:padding="7dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="村:"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_work_statics_check_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableRight="@drawable/ic_down"
+            android:textSize="@dimen/text_size_two"
+            android:textColor="@color/textColor_two"
+            android:background="@drawable/text_selector"
+            android:padding="7dp"/>
+        <Button
+            android:id="@+id/btn_work_statics_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/bg_white"
+            android:background="@drawable/ic_search"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <include layout="@layout/cut_line"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_home_online"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

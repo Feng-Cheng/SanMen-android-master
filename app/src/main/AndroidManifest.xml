@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.test.ydool.sanmen">
+
+    <!-- Required -->
+    <permission
+        android:name="com.test.ydool.sanmen.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required -->
+    <uses-permission android:name="com.test.ydool.sanmen.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!--如果需要使用QQ纯图分享或避免其它平台纯图分享的时候图片不被压缩，可以增加以下权限：-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 硬件加速对X5视频播放非常重要，建议开启 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--DownloadManager下载时不显示Notification-->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <application
+        android:name="MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_iconshow"
+        android:roundIcon="@drawable/ic_iconshow"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup, android:icon,android:roundIcon, android:label, android:theme">
+        <activity android:name=".activities.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.AuditorReportActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.WorkMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.WorkOnewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.WorkReportActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.AuditorMapActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.AuditorInformActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.AuditorShowActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.InformReportMainActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ActivityCunMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ActivityShowPutActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.PonitActivityMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.OnlineAdviceListCunActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.TodayHotActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ShowWebViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.InformReportActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.SignTimesActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.LiuLiangShowActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.WorkStaticsActivity"
+            android:screenOrientation="portrait"/>
+
+       <activity android:name=".activities.ThemeActivityMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.AuditorPotoShenActivtity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.AuditorPhotoShenShowActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.PonitActivityChooseActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.PonitActivityShowMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.AcitvityShowMineActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ActivityHomeListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.HomeInformReportMainActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ActivityHomeMainActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ChangePeopleActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.WendangReportActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.WendangManagerMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ActivityHomeSHowOnewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.HomeOnlineAdvicesMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.OnlineAdviceActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.OnlineAdviceShenActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.HomeShareHuifuActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.HomeShareMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ActivityMineNormalReportActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ActivityListHomeMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ListHomeOnewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.OnlineVedioActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.RegisteActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.TodayHotLikeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.MineShareHuifuActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ActivityShowShenActivity"
+            android:screenOrientation="portrait"/>
+
+         <activity android:name=".activities.LostPassWordActivity"
+                android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ScoreRankActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.DayActivityMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".activities.ProtocolActivity"
+                android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.PointTownXianShowActivity"
+                android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.GiveQuanXianActivity"
+                android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ActivityMineVillageShenActivity"
+                android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.HelpWenDangActivity"
+                android:screenOrientation="portrait"/>
+        <activity android:name=".activities.TestActivity"
+                android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ShowVideoActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".activities.ActivityVideoToPeo"
+            android:screenOrientation="portrait"/>
+        
+        <activity android:name=".activities.VersionDownActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".activities.ShowFileWebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <meta-data android:name="android.max_aspect" android:value="ratio_float" />
+
+        <!-- 友盟 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5b31b513f43e485d1400001e"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID"/>
+
+        <activity
+            android:name=".umengapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <receiver
+            android:name=".receiver.ReceiverNotification"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.hdl.jpushdemo" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/content_titile"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F8F4"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/query_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="发送人"
+            android:background="@drawable/text_selector"
+            android:textColor="#AAABAD"
+            android:drawableRight="@drawable/ic_down"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/btn_inform_report_search"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_inform_report_search"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bg_white"
+            android:background="@drawable/ic_search"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignTop="@+id/query_et"
+            android:layout_alignBottom="@+id/query_et"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_inform_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

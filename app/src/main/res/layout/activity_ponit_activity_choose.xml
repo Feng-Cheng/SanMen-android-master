@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/content_titile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动单位："
+                android:padding="10dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/textColor"/>
+            <TextView
+                android:id="@+id/tv_ponit_activity_choose_danwei"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableRight="@drawable/ic_down"
+                android:textSize="@dimen/text_size_two"
+                android:background="@drawable/text_selector3"
+                android:textColor="@color/textColor"
+                android:layout_marginRight="15dp"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动内容："
+                android:padding="10dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/textColor"/>
+            <TextView
+                android:id="@+id/tv_ponit_activity_choose_content"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableRight="@drawable/ic_down"
+                android:textSize="@dimen/text_size_two"
+                android:background="@drawable/text_selector3"
+                android:textColor="@color/textColor"
+                android:layout_marginRight="15dp"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动形式："
+                android:padding="10dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/textColor"/>
+            <TextView
+                android:id="@+id/tv_ponit_activity_choose_type"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableRight="@drawable/ic_down"
+                android:textSize="@dimen/text_size_two"
+                android:background="@drawable/text_selector3"
+                android:textColor="@color/textColor"
+                android:layout_marginRight="15dp"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容主题："
+                android:padding="10dp"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/textColor"/>
+            <TextView
+                android:id="@+id/tv_ponit_activity_choose_theme"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableRight="@drawable/ic_down"
+                android:textSize="@dimen/text_size_two"
+                android:background="@drawable/text_selector3"
+                android:textColor="@color/textColor"
+                android:layout_marginRight="15dp"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activty_time"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/phonenum_peopele"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/phonenumber"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:id="@+id/tv_activty_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_two"
+            android:textColor="@color/textColor_two"
+            android:gravity="center"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_phonenum_peopele"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_two"
+            android:textColor="@color/textColor_two"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_phonenumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_two"
+            android:textColor="@color/textColor_two"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_report"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/submission"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        />
+
+</LinearLayout>

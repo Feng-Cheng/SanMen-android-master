@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/content_titile"/>
+
+
+    <include layout="@layout/cut_line"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_check_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white">
+
+                <ImageView
+                    android:id="@+id/iv_time_report"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_time_report"
+                    android:padding="15dp"
+                    android:text="@string/time"
+                    android:textColor="#0c0c0c"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/tv_pickTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/iv_time_run"
+                    android:layout_centerVertical="true"/>
+                <ImageView
+                    android:id="@+id/iv_time_run"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_timepick"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_workcontent"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_work_content"/>
+
+                <TextView
+                    android:id="@+id/tv_mainanananan_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_workcontent"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="15dp"
+                    android:text="@string/work_content"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_mainanananan_a"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="5dp"
+                    android:text="(必填)"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_work_report_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="5"
+                android:lines="5"
+                android:gravity="top"
+                android:hint="点击输入工作内容"
+                android:textSize="@dimen/text_size_two"
+                android:padding="5dp"
+                android:background="@color/bg_white"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_problem_advice"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_soultion"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_problem_advice"
+                    android:padding="15dp"
+                    android:text="@string/problem_advice"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_work_report_solution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="3"
+                android:lines="3"
+                android:gravity="top"
+                android:hint="点击输入您的方法及建议"
+                android:textSize="@dimen/text_size_two"
+                android:padding="5dp"
+                android:background="@color/bg_white"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_activity_inform_main"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_activity_describe"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_activity_inform_main"
+                    android:padding="15dp"
+                    android:text="@string/activity_inform_main"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_work_report_activity_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="3"
+                android:lines="3"
+                android:gravity="top"
+                android:textSize="@dimen/text_size_two"
+                android:hint="点击输入信息描述"
+                android:padding="5dp"
+                android:background="@color/bg_white"/>
+           <!-- <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_ohter_report"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_report_photo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_ohter_report"
+                    android:padding="10dp"
+                    android:text="@string/ohter_report"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="5"
+                android:lines="5"
+                android:gravity="top"
+                android:hint="点击输入工作内容"
+                android:padding="5dp"
+                android:background="@null"/>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_problem_advices"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_issue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_problem_advices"
+                    android:padding="15dp"
+                    android:text="@string/problem_report"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_work_report_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="3"
+                android:lines="3"
+                android:gravity="top"
+                android:textSize="@dimen/text_size_two"
+                android:hint="点击输入反馈信息"
+                android:padding="5dp"
+                android:background="@color/bg_white"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_remarks"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_remark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_remarks"
+                    android:padding="10dp"
+                    android:text="@string/remarks"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_work_report_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="3"
+                android:lines="3"
+                android:gravity="top"
+                android:hint="点击输入备注信息"
+                android:textSize="@dimen/text_size_two"
+                android:padding="5dp"
+                android:background="@color/bg_white"/>
+        </LinearLayout>
+    </ScrollView>
+
+<!--
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/submission"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        />
+-->
+
+
+</LinearLayout>

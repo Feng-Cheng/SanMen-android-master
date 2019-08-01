@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/content_titile"/>
+    <!--<com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        />
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/auditorium_name"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_list_auditorium_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/textColor_two"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activty_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_list_activty_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/textColor_two"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="活动形式"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_list_activitgy_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/textColor_two"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activty_time"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_list_activty_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/textColor_two"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="宣讲人"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_list_toke_man"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/textColor_two"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/phonenumber"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_list_phonenumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/textColor_two"
+            android:textSize="@dimen/text_size"
+            android:padding="5dp"/>
+    </LinearLayout>-->
+
+
+</LinearLayout>

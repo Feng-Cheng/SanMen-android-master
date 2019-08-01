@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_play"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/player_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.ezvizuikit.open.EZUIPlayer
+            android:id="@+id/player_ui"
+            android:layout_width="match_parent"
+            android:background="#ff000000"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_lookbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="top"
+        android:background="#C7000000"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="9dp"
+            android:src="@drawable/player_back" />
+
+    </LinearLayout>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/player_layout"-->
+        <!--android:background="#ff888888">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_play"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:textColor="#FFFFFFFF"-->
+            <!--android:background="#66000000"-->
+            <!--android:text="停止"-->
+            <!--android:layout_marginTop="20dp"/>-->
+    <!--</RelativeLayout>-->
+</RelativeLayout>

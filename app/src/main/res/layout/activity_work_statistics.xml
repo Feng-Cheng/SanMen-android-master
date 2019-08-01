@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/content_titile"/>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="区域:"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_work_statics_village"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableRight="@drawable/ic_down"
+            android:textSize="@dimen/text_size_two"
+            android:textColor="@color/textColor_two"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type_t"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textColor"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_work_statics_check_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableRight="@drawable/ic_down"
+            android:textSize="@dimen/text_size_two"
+            android:textColor="@color/textColor_two"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/btn_work_statics_search"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textColor="@color/bg_white"
+            android:background="@drawable/button_selector"
+            android:text="@string/search"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/manger_adm"
+            android:padding="8dp"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:text="@string/sign_time"
+            android:gravity="center"
+
+            android:padding="8dp"
+            android:textColor="@color/textColor"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:text="@string/sign_state"
+            android:gravity="center"
+
+            android:padding="8dp"
+            android:textColor="@color/textColor"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:text="@string/work_state"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/textColor"/>
+    </LinearLayout>
+
+    <include layout="@layout/cut_line"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_work_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,304 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日热点"
+                android:textSize="21sp"
+                android:textColor="#393939"
+                android:paddingLeft="10dp"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@color/big_bg"
+                />
+            <TextView
+                android:id="@+id/tv_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="15sp"
+                android:ellipsize="end"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="7dp"
+                android:textColor="@color/bg_white"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <RelativeLayout
+                android:id="@+id/rl_new1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_tile1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:text="似懂非懂设计费科维奇就偶尔欧文日噢诶我日晚肯定是放假肯定就是收快递费"
+                    android:layout_margin="8dp"
+                    android:ellipsize="end"
+                    android:lines="3"/>
+
+                <TextView
+                    android:id="@+id/tv_hot_from1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_below="@+id/tv_tile1"
+                    android:layout_alignLeft="@id/tv_tile1"
+                    android:text="搜狐新闻"
+                    android:textColor="@color/textColor_show"
+                    android:textSize="@dimen/text_three" />
+
+                <TextView
+                    android:id="@+id/tv_hot_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_hot_from1"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/textColor_show"
+                    android:layout_alignTop="@+id/tv_hot_from1"
+                    android:text="2018-7-20"
+                    android:textSize="@dimen/text_three" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#e0e0e0"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_new2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_tile2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:text="似懂非懂设计费科维奇就偶尔欧文日噢诶我日晚肯定是放假肯定就是收快递费"
+                    android:layout_margin="8dp"
+                    android:ellipsize="end"
+                    android:lines="3"/>
+
+
+                <TextView
+                    android:id="@+id/tv_hot_from2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tile2"
+                    android:layout_marginTop="2dp"
+                    android:text="搜狐新闻"
+                    android:textColor="@color/textColor_show"
+                    android:layout_alignLeft="@id/tv_tile2"
+                    android:textSize="@dimen/text_three"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_hot_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_hot_from2"
+                    android:layout_toRightOf="@+id/tv_hot_from2"
+                    android:layout_marginLeft="7dp"
+                    android:text="搜狐新闻"
+                    android:textColor="@color/textColor_show"
+                    android:textSize="@dimen/text_three"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/cut_line"/>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <RelativeLayout
+            android:id="@+id/rl_new3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_tile3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/textColor_title"
+                android:text="似懂非懂设计费科维奇就偶尔欧文日噢诶我日晚肯定是放假肯定就是收快递费"
+                android:layout_margin="8dp"
+                android:ellipsize="end"
+                android:lines="3"/>
+
+
+            <TextView
+                android:id="@+id/tv_hot_from3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tile3"
+                android:layout_alignLeft="@id/tv_tile3"
+                android:layout_marginTop="2dp"
+                android:text="搜狐新闻"
+                android:textColor="@color/textColor_show"
+                android:textSize="@dimen/text_three" />
+
+            <TextView
+                android:id="@+id/tv_hot_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_hot_from3"
+                android:layout_toRightOf="@+id/tv_hot_from3"
+                android:layout_marginLeft="7dp"
+                android:text="搜狐新闻"
+                android:textColor="@color/textColor_show"
+                android:textSize="@dimen/text_three"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#e0e0e0"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_new4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_tile4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/textColor_title"
+                android:text="似懂非懂设计费科维奇就偶尔欧文日噢诶我日晚肯定是放假肯定就是收快递费"
+                android:layout_margin="8dp"
+                android:lines="3"
+                android:ellipsize="end"/>
+
+
+            <TextView
+                android:id="@+id/tv_hot_from4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="搜狐新闻"
+                android:layout_below="@+id/tv_tile4"
+                android:layout_alignLeft="@id/tv_tile4"
+                android:textColor="@color/textColor_show"
+                android:textSize="@dimen/text_three"                />
+
+            <TextView
+                android:id="@+id/tv_hot_time4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_hot_from4"
+                android:layout_marginLeft="7dp"
+                android:text="搜狐新闻"
+                android:layout_toRightOf="@+id/tv_hot_from4"
+                android:textColor="@color/textColor_show"
+                android:textSize="@dimen/text_three"  />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+        <include layout="@layout/cut_line"/>
+        <RelativeLayout
+            android:id="@+id/rl_new5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_tile5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/textColor"
+                android:layout_margin="8dp"
+                android:text="似懂非懂设计费科维奇就偶尔欧文日噢诶我日晚肯定是放假肯定就是收快递费"
+                android:lines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tv_hot_from5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tile5"
+                android:layout_alignLeft="@id/tv_tile5"
+                android:text="搜狐新闻"
+                android:textColor="@color/textColor_show"
+                android:textSize="@dimen/text_three"
+                />
+
+            <TextView
+                android:id="@+id/tv_hot_time5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_hot_from5"
+                android:layout_toRightOf="@+id/tv_hot_from5"
+                android:layout_marginLeft="7dp"
+                android:text="搜狐新闻"
+                android:textColor="@color/textColor_show"
+                android:textSize="@dimen/text_three" />
+
+    </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_where"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_four"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+
+</LinearLayout>
